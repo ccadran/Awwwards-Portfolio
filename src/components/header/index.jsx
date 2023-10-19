@@ -1,12 +1,40 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useLayoutEffect, useRef, useState } from "react";
 import styles from "./style.module.scss";
 import Nav from "./nav";
 import { AnimatePresence } from "framer-motion";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
 
 export default function index() {
   const [isActive, setIsActive] = useState(false);
+  const burger = useRef(null);
+  useLayoutEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.to(burger.current, {
+      scrollTrigger: {
+        trigger: document.documentElement,
+        start: 0,
+        end: window.innerHeight,
+        onLeave: () => {
+          gsap.to(burger.current, {
+            scale: 1,
+            duration: 0.25,
+            ease: "power1.out",
+          });
+        },
+        onEnterBack: () => {
+          gsap.to(burger.current, {
+            scale: 0,
+            duration: 0.25,
+            ease: "power1.out",
+          });
+        },
+      },
+    });
+  });
+
   return (
     <div className={styles.header}>
       <div className={styles.logo}>
@@ -32,7 +60,7 @@ export default function index() {
           <div className={styles.indicator}></div>
         </div>
       </div>
-      <div className={styles.headerButtonContainer}>
+      <div ref={burger} className={styles.headerButtonContainer}>
         <div
           onClick={() => {
             setIsActive(!isActive);
