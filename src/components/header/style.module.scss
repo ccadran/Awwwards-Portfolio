@@ -1,7 +1,7 @@
 .header {
   position: absolute;
   top: 0;
-  color: rgb(12, 12, 12);
+  color: rgb(255, 255, 255);
   z-index: 1;
   display: flex;
   justify-content: space-between;
@@ -61,7 +61,7 @@
       .indicator {
         width: 6px;
         height: 6px;
-        background-color: rgb(22, 22, 22);
+        background-color: rgb(255, 255, 255);
         position: absolute;
         border-radius: 50%;
         top: 80%;
