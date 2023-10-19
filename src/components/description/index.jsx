@@ -37,6 +37,9 @@ export default function index() {
           Dans ce portfolio vous allez pouvoir retrouver tous les projets que
           j’ai pu réaliser dans le cadre de mes études et à côté de celles-ci.
         </motion.p>
+        <div data-scroll data-scroll-speed={0.1} className={styles.button}>
+          <p>About Me</p>
+        </div>
       </div>
     </div>
   );
