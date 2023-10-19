@@ -7,15 +7,17 @@ export const opacity = {
     transition: { duration: 0.5 },
   },
   closed: { opacity: 0 },
+  transition: { duration: 0.5 },
 };
 
 export const slideUp = {
   initial: {
     y: "100%",
   },
-  open: {
+  open: (i) => ({
     y: 0,
-  },
+    transition: { duration: 0.5, delay: 0.02 * i },
+  }),
   closed: {
     y: "100%",
   },

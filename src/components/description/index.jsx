@@ -18,6 +18,7 @@ export default function index() {
             return (
               <span key={index} className={styles.mask}>
                 <motion.span
+                  custom={index}
                   variants={slideUp}
                   initial="initial"
                   animate={isInView ? "open" : "closed"}
