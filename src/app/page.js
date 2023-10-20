@@ -5,6 +5,7 @@ import Landing from "../components/landing";
 import Description from "../components/description";
 import Projects from "../components/projects";
 import SlidingImage from "../components/slidingImage";
+import Footer from "../components/footer";
 import { useEffect } from "react";
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
       <Description />
       <Projects />
       <SlidingImage />
+      <Footer />
     </main>
   );
 }
