@@ -1,0 +1,29 @@
+.slidingImages {
+  display: flex;
+  margin-top: 200px;
+  flex-direction: column;
+  gap: 3vw;
+  margin-bottom: 100vh;
+  .slider {
+    position: relative;
+    display: flex;
+    width: 120vw;
+    left: -10vw;
+    gap: 3vw;
+    .project {
+      width: 25%;
+      height: 25vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .imageContainer {
+        position: relative;
+        width: 80%;
+        height: 80%;
+        img {
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}

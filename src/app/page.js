@@ -4,6 +4,7 @@ import styles from "./page.module.css";
 import Landing from "../components/landing";
 import Description from "../components/description";
 import Projects from "../components/projects";
+import SlidingImage from "../components/slidingImage";
 import { useEffect } from "react";
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
       <Landing />
       <Description />
       <Projects />
+      <SlidingImage />
     </main>
   );
 }
