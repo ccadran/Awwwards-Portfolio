@@ -3,7 +3,9 @@
   margin-top: 200px;
   flex-direction: column;
   gap: 3vw;
-  margin-bottom: 100vh;
+  position: relative;
+  z-index: 2;
+  background-color: white;
   .slider {
     position: relative;
     display: flex;
