@@ -92,9 +92,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    cursor: pointer;
   }
   .burger {
     width: 100%;
+    position: relative;
     &::after,
     &::before {
       content: "";
@@ -105,6 +108,7 @@
       margin: auto;
       position: relative;
       transition: all 0.3s;
+      z-index: 10;
     }
     &:after {
       top: -5px;

@@ -2,6 +2,8 @@ import React, { useRef } from "react";
 import styles from "./style.module.scss";
 import Image from "next/image";
 import { useTransform, useScroll, motion } from "framer-motion";
+import Magnetic from "../common/magnetic";
+import Button from "../common/button";
 
 export default function index() {
   const container = useRef(null);
@@ -27,9 +29,9 @@ export default function index() {
           </span>
           <h2>together</h2>
           <motion.div style={{ x }} className={styles.buttonContainer}>
-            <div backgroundColor={"#334BD3"} className={styles.button}>
+            <Button backgroundColor={"#334BD3"} className={styles.button}>
               <p>Get in touch</p>
-            </div>
+            </Button>
           </motion.div>
           <motion.svg
             style={{ rotate, scale: 2 }}
@@ -46,9 +48,12 @@ export default function index() {
           </motion.svg>
         </div>
         <div className={styles.nav}>
-          <p>info@dennissnellenberg.com</p>
-
-          <p>+31 6 27 84 74 30</p>
+          <Button>
+            <p>info@dennissnellenberg.com</p>
+          </Button>
+          <Button>
+            <p>+31 6 27 84 74 30</p>
+          </Button>
         </div>
         <div className={styles.info}>
           <div>
@@ -64,15 +69,19 @@ export default function index() {
           <div>
             <span>
               <h3>socials</h3>
-
-              <p>Awwwards</p>
+              <Magnetic>
+                <p>Awwwards</p>
+              </Magnetic>
             </span>
-
-            <p>Instagram</p>
-
-            <p>Dribbble</p>
-
-            <p>Linkedin</p>
+            <Magnetic>
+              <p>Instagram</p>
+            </Magnetic>
+            <Magnetic>
+              <p>Dribbble</p>
+            </Magnetic>
+            <Magnetic>
+              <p>Linkedin</p>
+            </Magnetic>
           </div>
         </div>
       </div>

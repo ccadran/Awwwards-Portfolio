@@ -6,6 +6,8 @@ import Nav from "./nav";
 import { AnimatePresence } from "framer-motion";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import Magnetic from "../common/magnetic";
+import Button from "../common/button";
 
 export default function index() {
   const [isActive, setIsActive] = useState(false);
@@ -47,21 +49,27 @@ export default function index() {
       </div>
 
       <div className={styles.nav}>
-        <div className={styles.el}>
-          <p>Work</p>
-          <div className={styles.indicator}></div>
-        </div>
-        <div className={styles.el}>
-          <p>About</p>
-          <div className={styles.indicator}></div>
-        </div>
-        <div className={styles.el}>
-          <p>Contact</p>
-          <div className={styles.indicator}></div>
-        </div>
+        <Magnetic>
+          <div className={styles.el}>
+            <p>Work</p>
+            <div className={styles.indicator}></div>
+          </div>
+        </Magnetic>
+        <Magnetic>
+          <div className={styles.el}>
+            <p>About</p>
+            <div className={styles.indicator}></div>
+          </div>
+        </Magnetic>
+        <Magnetic>
+          <div className={styles.el}>
+            <p>Contact</p>
+            <div className={styles.indicator}></div>
+          </div>
+        </Magnetic>
       </div>
       <div ref={burger} className={styles.headerButtonContainer}>
-        <div
+        <Button
           onClick={() => {
             setIsActive(!isActive);
           }}
@@ -72,7 +80,7 @@ export default function index() {
               isActive ? styles.burgerActive : ""
             }`}
           ></div>
-        </div>
+        </Button>
       </div>
       <AnimatePresence mode="wait">{isActive && <Nav />}</AnimatePresence>
     </div>

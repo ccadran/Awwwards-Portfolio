@@ -4,7 +4,7 @@ import styles from "./style.module.scss";
 import { motion, useInView } from "framer-motion";
 import { slideUp, opacity } from "./anim";
 import { useRef } from "react";
-import Button from "../button";
+import Button from "../common/button";
 
 export default function index() {
   const container = useRef(null);
