@@ -8,6 +8,7 @@ import SlidingImage from "../components/slidingImage";
 import Footer from "../components/footer";
 import Preloader from "../components/preloader";
 import { useEffect, useState } from "react";
+import { AnimatePresence } from "framer-motion";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -23,7 +24,9 @@ export default function Home() {
   }, []);
   return (
     <main className={styles.main}>
-      {isLoading && <Preloader />}
+      <AnimatePresence mode="wait">
+        {isLoading && <Preloader />}
+      </AnimatePresence>
       <Landing />
       <Description />
       <Projects />
