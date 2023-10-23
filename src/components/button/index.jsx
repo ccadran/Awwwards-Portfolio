@@ -8,6 +8,7 @@ export default function index({
 }) {
   const circle = useRef(null);
   const timeline = useRef(null);
+  let timeoutId = null;
   useEffect(() => {
     timeline.current = gsap.timeline({ paused: true });
     timeline.current
@@ -23,10 +24,16 @@ export default function index({
       );
   }, []);
   const manageMouseEnter = () => {
+    if (timeoutId) {
+      clearTimeout(timeoutId);
+      timeoutId = null;
+    }
     timeline.current.tweenFromTo("enter", "exit");
   };
   const manageMouseLeave = () => {
-    timeline.current.play();
+    timeoutId = setTimeout(() => {
+      timeline.current.play();
+    }, 300);
   };
   return (
     <div
