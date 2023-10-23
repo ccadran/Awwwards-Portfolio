@@ -4,6 +4,7 @@ import styles from "./style.module.scss";
 import { motion, useInView } from "framer-motion";
 import { slideUp, opacity } from "./anim";
 import { useRef } from "react";
+import Button from "../button";
 
 export default function index() {
   const container = useRef(null);
@@ -37,8 +38,10 @@ export default function index() {
           Dans ce portfolio vous allez pouvoir retrouver tous les projets que
           j’ai pu réaliser dans le cadre de mes études et à côté de celles-ci.
         </motion.p>
-        <div data-scroll data-scroll-speed={0.1} className={styles.button}>
-          <p>About Me</p>
+        <div data-scroll data-scroll-speed={0.1}>
+          <Button className={styles.button}>
+            <p>About Me</p>
+          </Button>
         </div>
       </div>
     </div>
