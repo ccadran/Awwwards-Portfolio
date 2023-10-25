@@ -37,7 +37,7 @@ export default function Nav() {
             <p>Navigation</p>
           </div>
           {navItems.map((item, index) => {
-            return <Link data={{ ...item, index }} />;
+            return <Link data={{ ...item, index }} key={index} />;
           })}
         </div>
         <div className={styles.footer}>
