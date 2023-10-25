@@ -10,7 +10,7 @@ export default function index() {
   const container = useRef(null);
   const isInView = useInView(container);
   const phrases =
-    "Je suis Clario Cadran, passionné par le développement web dans son ensemble et pour l’instant plus orienté sur le front-end.Je suis actuellement Étudiant en deuxième année du BUT MMI (Métiers du Multimédia et de l’Internet) à Bordeaux.";
+    "Je suis Clario Cadran, un photographe freelance. Depuis que je suis tout petit, la photographie a toujours été une passion, mais c'est à partir de 2020 que j'ai décidé de m'y investir plus sérieusement.";
   return (
     <div ref={container} className={styles.description}>
       <div className={styles.body}>
@@ -35,8 +35,8 @@ export default function index() {
           initial="initial"
           animate={isInView ? "open" : "closed"}
         >
-          Dans ce portfolio vous allez pouvoir retrouver tous les projets que
-          j’ai pu réaliser dans le cadre de mes études et à côté de celles-ci.
+          Dans ce portfolio, vous allez pouvoir retrouver certaines des photos
+          que j’ai pu réaliser dans le cadre de différents projets.
         </motion.p>
         <div data-scroll data-scroll-speed={0.1}>
           <Button className={styles.button}>

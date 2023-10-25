@@ -2,7 +2,7 @@
 import React from "react";
 import styles from "./style.module.scss";
 
-export default function index({ index, title, manageModal }) {
+export default function index({ index, title, manageModal, ville }) {
   return (
     <div
       onMouseEnter={(e) => {
@@ -14,7 +14,7 @@ export default function index({ index, title, manageModal }) {
       className={styles.project}
     >
       <h2>{title}</h2>
-      <p>Design & Development</p>
+      <p>{ville}</p>
     </div>
   );
 }

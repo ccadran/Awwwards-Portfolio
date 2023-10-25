@@ -12,21 +12,25 @@ const projects = [
     title: "Carlton Hostel",
     src: "carlton.jpg",
     color: "#D3CCB8",
+    ville: "Cannes",
   },
   {
-    title: "Mercedes classe G",
+    title: "Mercedes Classe G",
     src: "classeG.jpg",
     color: "#000",
+    ville: "Monaco",
   },
   {
     title: "Randy Hertin",
     src: "Randy.jpg",
     color: "#E5E1DC",
+    ville: "Bordeaux",
   },
   {
     title: "Martinez Hostel",
     src: "martinez.jpg",
     color: "#FFC5A5",
+    ville: "Cannes",
   },
 ];
 
@@ -116,6 +120,7 @@ export default function Home() {
             <Project
               index={index}
               title={project.title}
+              ville={project.ville}
               manageModal={manageModal}
               key={index}
             />

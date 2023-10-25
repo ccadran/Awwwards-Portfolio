@@ -49,10 +49,10 @@ export default function index() {
         </div>
         <div className={styles.nav}>
           <Button>
-            <p>info@dennissnellenberg.com</p>
+            <p>clar.cadran@gmail.com</p>
           </Button>
           <Button>
-            <p>+31 6 27 84 74 30</p>
+            <p>+33 6 01 46 14 71</p>
           </Button>
         </div>
         <div className={styles.info}>

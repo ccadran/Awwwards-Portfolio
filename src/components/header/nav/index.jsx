@@ -11,15 +11,15 @@ const navItems = [
   },
   {
     title: "Work",
-    href: "/work",
+    href: "/",
   },
   {
     title: "About",
-    href: "/about",
+    href: "/",
   },
   {
     title: "Contact",
-    href: "/contact",
+    href: "/",
   },
 ];
 export default function index() {
