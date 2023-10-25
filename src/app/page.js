@@ -1,12 +1,12 @@
 "use client";
 import Image from "next/image";
 import styles from "./page.module.css";
-import Landing from "../components/landing";
-import Description from "../components/description";
-import Projects from "../components/projects";
-import SlidingImage from "../components/slidingImage";
-import Footer from "../components/footer";
-import Preloader from "../components/preloader";
+import Landing from "../components/landing/Landing";
+import Description from "../components/description/Description";
+import Projects from "../components/projects/Projects";
+import SlidingImage from "../components/slidingImage/SlidingImage";
+import Footer from "../components/footer/Footer";
+import Preloader from "../components/preloader/Preloader";
 import { useEffect, useState } from "react";
 import { AnimatePresence } from "framer-motion";
 

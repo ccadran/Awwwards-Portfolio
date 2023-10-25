@@ -6,8 +6,8 @@ import Nav from "./nav";
 import { AnimatePresence } from "framer-motion";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import Magnetic from "../common/magnetic";
-import Button from "../common/button";
+import Magnetic from "../common/magnetic/Magnetic";
+import Button from "../common/button/Button";
 
 export default function index() {
   const [isActive, setIsActive] = useState(false);

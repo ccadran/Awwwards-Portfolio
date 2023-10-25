@@ -1,12 +1,11 @@
 "use client";
 
-
 import React, { useRef } from "react";
 import styles from "./style.module.scss";
 import Image from "next/image";
 import { useTransform, useScroll, motion } from "framer-motion";
-import Magnetic from "../common/magnetic";
-import Button from "../common/button";
+import Magnetic from "../common/magnetic/Magnetic";
+import Button from "../common/button/Button";
 
 export default function index() {
   const container = useRef(null);
