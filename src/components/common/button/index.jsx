@@ -2,7 +2,7 @@ import React from "react";
 import { useEffect, useRef } from "react";
 import styles from "./style.module.scss";
 import gsap from "gsap";
-import Magnetic from "../Magnetic";
+import Magnetic from "../magnetic";
 
 export default function index({
   children,

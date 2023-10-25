@@ -9,7 +9,7 @@ import Button from "../common/button";
 
 const projects = [
   {
-    title: "Carlton Hostel",
+    title: "Carlton Hotel",
     src: "carlton.jpg",
     color: "#D3CCB8",
     ville: "Cannes",
@@ -27,7 +27,7 @@ const projects = [
     ville: "Bordeaux",
   },
   {
-    title: "Martinez Hostel",
+    title: "Martinez Hotel",
     src: "martinez.jpg",
     color: "#FFC5A5",
     ville: "Cannes",
