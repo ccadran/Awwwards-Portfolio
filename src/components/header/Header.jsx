@@ -2,14 +2,14 @@
 
 import React, { useLayoutEffect, useRef, useState } from "react";
 import styles from "./style.module.scss";
-import Nav from "./nav";
+import Nav from "./Header";
 import { AnimatePresence } from "framer-motion";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import Magnetic from "../common/magnetic/Magnetic";
 import Button from "../common/button/Button";
 
-export default function index() {
+export default function Header() {
   const [isActive, setIsActive] = useState(false);
   const burger = useRef(null);
   useLayoutEffect(() => {
