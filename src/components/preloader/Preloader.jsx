@@ -4,7 +4,7 @@ import styles from "./style.module.scss";
 import { motion } from "framer-motion";
 import { slideUp, opacity } from "./anim";
 import { useEffect, useState } from "react";
-export default function index() {
+export default function PreLoader() {
   const [index, setIndex] = useState(0);
   const [dimension, setDimension] = useState({ width: 0, height: 0 });
   const words = [

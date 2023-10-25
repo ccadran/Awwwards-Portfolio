@@ -6,7 +6,7 @@ import { slideUp, opacity } from "./anim";
 import { useRef } from "react";
 import Button from "../common/button/Button";
 
-export default function index() {
+export default function Description() {
   const container = useRef(null);
   const isInView = useInView(container);
   const phrases =

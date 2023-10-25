@@ -7,7 +7,7 @@ import { useTransform, useScroll, motion } from "framer-motion";
 import Magnetic from "../common/magnetic/Magnetic";
 import Button from "../common/button/Button";
 
-export default function index() {
+export default function Footer() {
   const container = useRef(null);
 
   const { scrollYProgress } = useScroll({

@@ -6,7 +6,7 @@ import styles from "./style.module.scss";
 import gsap from "gsap";
 import Magnetic from "../magnetic/Magnetic";
 
-export default function index({
+export default function Button({
   children,
   backgroundColor = "#455CE9",
   ...attributes

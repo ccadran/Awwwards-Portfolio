@@ -22,7 +22,7 @@ const navItems = [
     href: "/",
   },
 ];
-export default function index() {
+export default function Nav() {
   return (
     <motion.div
       variants={menuSlide}

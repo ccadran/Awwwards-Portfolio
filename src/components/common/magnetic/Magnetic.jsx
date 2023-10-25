@@ -4,7 +4,7 @@ import React, { useEffect, useRef } from "react";
 import styles from "./style.module.scss";
 import gsap from "gsap";
 
-export default function index({ children }) {
+export default function Magnetic({ children }) {
   const magnetic = useRef(null);
   useEffect(() => {
     const xTo = gsap.quickTo(magnetic.current, "x", {
