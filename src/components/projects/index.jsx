@@ -9,24 +9,24 @@ import Button from "../common/button";
 
 const projects = [
   {
-    title: "C2 Montreal",
-    src: "c2montreal.png",
-    color: "#000000",
+    title: "Carlton Hostel",
+    src: "carlton.jpg",
+    color: "#D3CCB8",
   },
   {
-    title: "Office Studio",
-    src: "officestudio.png",
-    color: "#8C8C8C",
+    title: "Mercedes classe G",
+    src: "classeG.jpg",
+    color: "#000",
   },
   {
-    title: "Locomotive",
-    src: "locomotive.png",
-    color: "#EFE8D3",
+    title: "Randy Hertin",
+    src: "Randy.jpg",
+    color: "#E5E1DC",
   },
   {
-    title: "Silencio",
-    src: "silencio.png",
-    color: "#706D63",
+    title: "Martinez Hostel",
+    src: "martinez.jpg",
+    color: "#FFC5A5",
   },
 ];
 
@@ -146,7 +146,7 @@ export default function Home() {
                   key={`modal_${index}`}
                 >
                   <Image
-                    src={`/images/${src}`}
+                    src={`/images/clario/projects/${src}`}
                     width={300}
                     height={0}
                     alt="image"

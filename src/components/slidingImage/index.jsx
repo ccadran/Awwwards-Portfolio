@@ -6,38 +6,38 @@ import { useScroll, useTransform, motion } from "framer-motion";
 const slider1 = [
   {
     color: "#e3e5e7",
-    src: "c2.jpg",
+    src: "BMW.jpg",
   },
   {
     color: "#d6d7dc",
-    src: "decimal.jpg",
+    src: "chabandelmas.jpg",
   },
   {
     color: "#e3e3e3",
-    src: "funny.jpg",
+    src: "Monoprix.jpg",
   },
   {
     color: "#21242b",
-    src: "google.jpg",
+    src: "Randy2.jpg",
   },
 ];
 
 const slider2 = [
   {
     color: "#d4e3ec",
-    src: "maven.jpg",
+    src: "nice2.jpg",
   },
   {
     color: "#e5e0e1",
-    src: "panda.jpg",
+    src: "mercedes.jpg",
   },
   {
     color: "#d7d4cf",
-    src: "powell.jpg",
+    src: "bacalan.jpg",
   },
   {
     color: "#e1dad6",
-    src: "wix.jpg",
+    src: "nice3.jpg",
   },
 ];
 
@@ -63,7 +63,11 @@ export default function index() {
               className={styles.project}
             >
               <div className={styles.imageContainer}>
-                <Image fill={true} src={`/images/${project.src}`} alt="image" />
+                <Image
+                  fill={true}
+                  src={`/images/clario/${project.src}`}
+                  alt="image"
+                />
               </div>
             </div>
           );
@@ -79,7 +83,11 @@ export default function index() {
               className={styles.project}
             >
               <div className={styles.imageContainer}>
-                <Image fill={true} src={`/images/${project.src}`} alt="image" />
+                <Image
+                  fill={true}
+                  src={`/images/clario/${project.src}`}
+                  alt="image"
+                />
               </div>
             </div>
           );
