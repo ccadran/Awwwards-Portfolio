@@ -3,12 +3,12 @@ import { motion } from "framer-motion";
 import styles from "./style.module.scss";
 
 export default function Index() {
-  const initialPath = `M100 0 L200 0 L200 ${window.innerHeight} L100 ${
-    window.innerHeight
-  } Q-100 ${window.innerHeight / 2} 100 0`;
-  const targetPath = `M100 0 L200 0 L200 ${window.innerHeight} L100 ${
-    window.innerHeight
-  } Q100 ${window.innerHeight / 2} 100 0`;
+  const initialPath = `M100 0 L100 ${window.innerHeight} Q-100 ${
+    window.innerHeight / 2
+  } 100 0`;
+  const targetPath = `M100 0 L100 ${window.innerHeight} Q100 ${
+    window.innerHeight / 2
+  } 100 0`;
 
   const curve = {
     initial: {

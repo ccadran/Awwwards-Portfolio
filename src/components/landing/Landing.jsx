@@ -13,18 +13,20 @@ export default function Home() {
   let direction = 1;
 
   useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-    requestAnimationFrame(animation);
-    gsap.to(slider.current, {
-      scrollTrigger: {
-        trigger: document.documentElement,
-        start: 0,
-        end: window.innerHeight,
-        onUpdate: (e) => (direction = e.direction * -1),
-        scrub: 0.25,
-      },
-      x: "-300px",
-    });
+    if (typeof window !== "undefined") {
+      gsap.registerPlugin(ScrollTrigger);
+      requestAnimationFrame(animation);
+      gsap.to(slider.current, {
+        scrollTrigger: {
+          trigger: document.documentElement,
+          start: 0,
+          end: window.innerHeight,
+          onUpdate: (e) => (direction = e.direction * -1),
+          scrub: 0.25,
+        },
+        x: "-300px",
+      });
+    }
   }, []);
   const animation = () => {
     if (xPercent < -100) {

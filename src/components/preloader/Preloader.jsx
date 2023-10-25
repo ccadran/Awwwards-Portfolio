@@ -18,10 +18,12 @@ export default function PreLoader() {
     "Hallo",
   ];
   useEffect(() => {
-    setDimension({
-      width: window.innerWidth,
-      height: window.innerHeight,
-    });
+    if (typeof window !== "undefined") {
+      setDimension({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    }
   }, []);
 
   useEffect(() => {

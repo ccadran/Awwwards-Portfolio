@@ -13,28 +13,30 @@ export default function Header() {
   const [isActive, setIsActive] = useState(false);
   const burger = useRef(null);
   useLayoutEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-    gsap.to(burger.current, {
-      scrollTrigger: {
-        trigger: document.documentElement,
-        start: 0,
-        end: window.innerHeight,
-        onLeave: () => {
-          gsap.to(burger.current, {
-            scale: 1,
-            duration: 0.25,
-            ease: "power1.out",
-          });
+    if (typeof window !== "undefined") {
+      gsap.registerPlugin(ScrollTrigger);
+      gsap.to(burger.current, {
+        scrollTrigger: {
+          trigger: document.documentElement,
+          start: 0,
+          end: window.innerHeight,
+          onLeave: () => {
+            gsap.to(burger.current, {
+              scale: 1,
+              duration: 0.25,
+              ease: "power1.out",
+            });
+          },
+          onEnterBack: () => {
+            gsap.to(burger.current, {
+              scale: 0,
+              duration: 0.25,
+              ease: "power1.out",
+            });
+          },
         },
-        onEnterBack: () => {
-          gsap.to(burger.current, {
-            scale: 0,
-            duration: 0.25,
-            ease: "power1.out",
-          });
-        },
-      },
-    });
+      });
+    }
   });
 
   return (
